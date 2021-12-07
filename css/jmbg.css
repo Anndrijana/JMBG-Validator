@@ -1,0 +1,283 @@
+.form {
+	border-radius: 20px;
+	/*box-shadow: 20px 30px white;*/
+    box-shadow: 7px 7px olive, -1em 0 .4em red;
+	overflow: hidden;
+	width: 700px;
+	max-width: 100%;
+    margin-top: 220px;
+    margin-left: -2px;
+    padding-bottom: 20px;
+    /*background: linear-gradient(45deg, black, white);*/
+    background-color: white;
+}
+
+h3 {
+    margin-top: 50px;
+}
+
+body {
+    box-sizing: border-box;
+    /*font-family:'Courier New', Courier, monospace*/
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#background {
+    background-image: url('people.jpg');
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+}
+
+#button {
+    transition-duration: 0.4s;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    margin: 0 auto;
+    margin-top: 90px;
+    display: block;
+    cursor: pointer;
+    background-color: red;
+    font-weight: bolder;
+}
+
+#button:hover {
+    background-color: olive;
+    color: white;
+    font-weight: bolder;
+}
+
+#h3 {
+    color: white;
+    text-align: center;
+    font-weight: bolder;
+}
+
+#labelIme {
+    margin-top: 20px;
+}
+
+#labelPrezime {
+    display: block;
+    margin-top: 40px;
+}
+
+#labelJMBG {
+    display: block;
+    margin-top: 40px;
+}
+
+section {
+    width: 100%;
+    background: transparent;
+    overflow: hidden;
+}
+
+section .wave {
+    width: 100%;
+    height: 100px;
+    background: url(wave.png);
+}
+
+section .wave.wave4 {
+    animation: animate2 5s linear infinite;
+    z-index: 997;
+    opacity: 0.7;
+    animation-delay: -5s;
+}
+
+@keyframes animate2 {
+    0%
+    {
+        background-position-x: 0;
+    }
+    100%
+    {
+        background-position-x: -1000px;
+    }
+}
+
+h1 {
+    position: absolute;
+    align-items: center;
+    top: 10%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 70px;
+    letter-spacing: 0.7em;
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke-width: 4px;
+    -webkit-text-stroke-color: red;
+    text-shadow: 
+    10px 10px white,
+    20px 20px #000000 ;
+  }
+
+  h2 {
+    position: absolute;
+    align-items: center;
+    top: 15%;
+    left: 50%;
+    color: red;
+    letter-spacing: 0.7em;
+    transform: translate(-50%, -50%);
+    font-size: 30px;
+    margin-top: 40px;
+    font-weight: bolder;
+    text-shadow: 
+    5px 5px #000000;
+  }
+
+  footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: transparent;
+    text-align: center;
+    letter-spacing: 0.4em;
+  }
+
+  /*p {
+    padding-top: 60px;
+    color: red
+  }*/
+
+.form-control {
+    border-color: transparent;
+}
+
+.form-control i {
+    visibility: hidden; 
+}
+
+.form-control input {
+    border: 2px solid black;
+}
+
+.form-control.success input {
+      display: block;
+      border: 2px solid olive;
+}
+
+.form-control.success i.fa-check-circle {
+    visibility: visible;
+    color: olive;
+}
+
+.form-control.error input {
+    display: block;
+    border: 2px solid red;
+}
+
+.form-control.error i.fa-exclamation-circle {
+    visibility: visible;
+    color: red;
+}
+
+.form-control small {
+    visibility: hidden;
+    position: absolute;
+    left: 520px;   
+}
+
+.form-control small#smallDrugi {
+    visibility: hidden;
+    position: absolute;
+    left: 520px;   
+}
+
+.form-control small#smallTreci {
+    visibility: hidden;
+    position: absolute;
+    left: 520px;   
+}
+
+.form-control small#smallCetvrti {
+    visibility: hidden;
+    position: absolute;
+    left: 520px;   
+}
+
+.form-control.error small {
+    visibility: visible;
+    color: red;
+}
+
+.form-control.error small#smallDrugi {
+    visibility: visible;
+    color: red;
+}
+
+.form-control.error small#smallTreci {
+    visibility: visible;
+    color: red;
+}
+
+.form-control.error small#smallCetrvti {
+    visibility: visible;
+    color: red;
+}
+
+.marginaGornjaZaDugme {
+    margin-top: 30px;
+}
+
+form#form2.form {
+    visibility: hidden;
+    width: 900px;
+    text-align: center;
+}
+
+p#p { 
+    letter-spacing: 0.3em;
+    font-size: 22px;
+    font-weight: bolder;
+    background: linear-gradient(45deg, red, white);
+}
+
+label#first {
+    text-align: center;
+    font-size: 22px;
+    margin-bottom: 20px;
+}
+
+p#ime1 {
+    font-size: 20px;
+    margin-bottom: 20px;
+    color: red;
+}
+
+p#prezime1 {
+    font-size: 20px;
+    margin-bottom: 20px;
+    color: red;
+}
+
+p#dr1 {
+    font-size: 20px;
+    margin-bottom: 20px;
+    color: red;
+}
+
+p#mr1 {
+    font-size: 20px;
+    margin-bottom: 20px;
+    color: red;
+}
+
+p#pol1 {
+    font-size: 20px;
+    margin-bottom: 20px;
+    color: red;
+}
+
+p#rb1 {
+    font-size: 20px;
+    margin-bottom: 20px;
+    color: red;
+}

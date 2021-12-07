@@ -1,0 +1,107 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>JMBG validator</title>
+    <link rel = "icon" href="css/icon.png" type = "image/x-icon">
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="css/jmbg.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+</head>
+
+<form class="form" id="form2" style="font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; margin-left: -50px; position: fixed; margin-top: 790px;">
+  <p id="p">Izgenerisani podaci iz JMBG-a:</p>
+  <div class="form-control">
+    <div>
+      <label id="first">Ime:</label>
+      <p id="ime1"></p>
+    </div>
+    <div>
+      <label id="first">Prezime:</label>
+      <p id="prezime1"></p>
+    </div>
+    <div>
+      <label id="first">Datum rođenja:</label>
+      <p id="dr1"></p>
+    </div>
+    <div>
+      <label id="first">Mesto rođenja:</label>
+      <p id="mr1"></p>
+    </div>
+    <div>
+      <label id="first">Pol:</label>
+      <p id="pol1"></p>
+    </div>
+    <div>
+      <label id="first">Redni broj:</label>
+      <p id="rb1"></p>
+    </div>
+  </div>
+</form>
+
+<body id="background">
+
+    <h1 id="title1">JMBG</h1>
+    <h2 id="title2">VALIDATOR</h2>
+
+      <form class="form" id="form">
+        
+        <div>
+        <div class="form-control">
+          <label id="labelIme">Unesite Vaše ime:</label>
+          <input id="ime" type="text" class="form-control" placeholder="&#10067; Ime" style="position: relative; z-index: 1;">
+          <i class="fas fa-check-circle fa-lg" style="position: absolute; top: 303px; left: 1150px; z-index: 1; "></i>
+			    <i class="fas fa-exclamation-circle fa-lg" style="position: absolute; top: 303px; left: 1150px; z-index: 1; "></i>
+          <small>Poruka o grešci</small>
+        </div>
+      </div> 
+      
+        <div>
+        <div class="form-control">
+          <label id="labelPrezime">Unesite Vaše prezime:</label>
+          <input id="prezime" type="text" class="form-control" placeholder="&#10067; Prezime" style="position: relative; z-index: 1">
+          <i class="fas fa-check-circle fa-lg" style="position: absolute; top: 447px; left: 1150px; z-index: 1; "></i>
+			    <i class="fas fa-exclamation-circle fa-lg" style="position: absolute; top: 447px; left: 1150px; z-index: 1;"></i>
+          <small>Poruka o grešci</small>
+        </div>
+      </div>
+
+        <div>
+        <div class="form-control">
+          <label id="labelJMBG">Unesite Vaš JMBG:</label>
+          <input id="jmbg" type="number" value="" class="form-control" placeholder="&#10067; JMBG" style="position: relative; z-index: 1; ">
+          <i class="fas fa-check-circle fa-lg" style="position: absolute; top: 591px; left: 1150px; z-index: 1; "></i>
+			    <i class="fas fa-exclamation-circle fa-lg" style="position: absolute; top: 591px; left: 1150px; z-index: 1;"></i>
+          <small></small>
+          <small id="smallDrugi" style="top: 650px;"></small>
+          <small id="smallTreci" style="top: 675px;"></small>
+          <small id="smallCetvrti" style="top: 695px;"></small>
+        </div>
+      </div>
+
+      <div class="marginaGornjaZaDugme">
+        <input id="button" type="button" class="btn btn-primary btn-lg" value="POŠALJI" onclick="proveriUnos()"></input>
+      </div>
+
+      </form>
+        
+        <!-- Optional JavaScript -->
+        <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
+        <script type="text/javascript" src="js/jmbg.js"></script> 
+</body>
+
+<footer>
+  <section>
+    <div class="wave wave4"></div>
+  </section>
+</footer> 
+
+</html>
